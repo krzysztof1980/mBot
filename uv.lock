@@ -1,0 +1,47 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "cyberpi"
+version = "0.0.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "makeblock" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5b/f6/45cc487b88d66ce78de244e6d85ca1b155aa0995485a6ea7aac8fc4c2fe4/cyberpi-0.0.7.tar.gz", hash = "sha256:e7395d6391c06b81b3938922cb5daae576c30fc34ec6e92730117f14be7b8200", size = 2022, upload-time = "2022-02-09T02:23:25.083Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2d/b7/f0ff640e3df4758f3c8acbd2e5098b658371880a736667ea4d72e67d625c/cyberpi-0.0.7-py3-none-any.whl", hash = "sha256:d47ad417028e612a021b7aebc08a9ad1f3d251c6875aeb51e34c13378be4e5e0", size = 2039, upload-time = "2022-02-09T02:23:23.304Z" },
+]
+
+[[package]]
+name = "makeblock"
+version = "0.1.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyserial" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fb/be/e528f7b1fb44e6abe96eb747c282e1d5cc8370e0798e9ecb05ee5f9c4a3e/makeblock-0.1.8.tar.gz", hash = "sha256:8ad949e29f9750d94598e7388b2683c4b77ce28a0aa68c36664a00e76641f849", size = 60110, upload-time = "2022-02-09T03:12:49.814Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/28/859fd507dee6ca9dbd65638ca8fdca74e1340cae41442971c726c2e8884d/makeblock-0.1.8-py3-none-any.whl", hash = "sha256:b4ce190b7793ae09c7a57f8b904695c6f1ed05cdcfa16af0d8797c182f1c0d53", size = 69415, upload-time = "2022-02-09T03:12:47.886Z" },
+]
+
+[[package]]
+name = "mbot"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "cyberpi" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "cyberpi", specifier = "==0.0.7" }]
+
+[[package]]
+name = "pyserial"
+version = "3.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/7d/ae3f0a63f41e4d2f6cb66a5b57197850f919f59e558159a4dd3a818f5082/pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb", size = 159125, upload-time = "2020-11-23T03:59:15.045Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0", size = 90585, upload-time = "2020-11-23T03:59:13.41Z" },
+]
